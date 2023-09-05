@@ -10,6 +10,7 @@ import {v4 as uuid} from 'uuid';
 import {API , graphqlOperation , Storage} from 'aws-amplify' ;
 import {createContact , updateContact , deleteContact} from '../../graphql/mutations';
 import { listContacts } from '../../graphql/queries';
+import { color } from 'd3-color';
 
 
 
@@ -146,7 +147,7 @@ export default function Contacts() {
         <Col className="px-2 my-2" key={indx}>
         <Card style={{ width: '12rem' }}>
        
-        <Card.Img 
+        <Card.Img
             src={profilePicPaths[indx] || ''}
             variant="top" />
             <Card.Body>

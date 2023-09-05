@@ -42,7 +42,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-spassvogel-dev-170839-deployment/amplify-cfn-templates/auth/spassvogel739bd3a3-cloudformation-template.json",
         "logicalId": "authspassvogel739bd3a3"
       },
-      "lastPushTimeStamp": "2023-08-28T19:42:36.304Z",
+      "lastPushTimeStamp": "2023-09-04T22:30:09.819Z",
       "output": {
         "UserPoolId": "eu-central-1_XR3yvQhX7",
         "AppClientIDWeb": "vefcl8nkjeo7a3fvqkso6ro5n",
@@ -60,7 +60,7 @@
       "service": "S3",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
-      "lastPushTimeStamp": "2023-08-28T19:42:36.310Z",
+      "lastPushTimeStamp": "2023-09-04T22:30:10.599Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-spassvogel-dev-170839-deployment/amplify-cfn-templates/storage/cloudformation-template.json",
         "logicalId": "storagecontactstorage"
@@ -69,7 +69,7 @@
         "BucketName": "contactstorage170839-dev",
         "Region": "eu-central-1"
       },
-      "lastPushDirHash": "vsDfC1QTDPxLtBxFwppEIIUu7gY="
+      "lastPushDirHash": "MctzJdhhuxB4WgCrd4vfZJXI98o="
     }
   },
   "api": {
@@ -95,8 +95,8 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-spassvogel-dev-170839-deployment/amplify-cfn-templates/api/cloudformation-template.json",
         "logicalId": "apispassvogel"
       },
-      "lastPushTimeStamp": "2023-08-28T19:42:37.912Z",
-      "lastPushDirHash": "J49jS/QNedVYCq6pnmDFnXPHQQo="
+      "lastPushTimeStamp": "2023-09-04T22:30:10.599Z",
+      "lastPushDirHash": "8NaFAiifSe/61fRjIK2hxFDXPi0="
     }
   }
 }
