@@ -51,28 +51,52 @@ input[type=radio] {
 .actionButton {
     width: 100%;
     border-radius: 0px;
-    color: #fff;
+    color: #000 !important;
     background-color: coral;
     border: 0px;
-    margin-bottom: 30px;
-    padding: 10px 15px;
+    margin-bottom: 20px;
+    padding: 8px 15px;
     font-weight: 600;
     text-transform: uppercase;
     display: block;
     text-decoration: none;
     text-align: left;
+    background: rgb(219, 219, 41);
+    background: linear-gradient(90deg, rgba(219, 219, 41, 1) 0%, rgba(237, 117, 222, 1) 46%, rgba(41, 183, 219, 1) 100%);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.actionButton:hover {
+    background: rgb(41, 183, 219);
+    background: linear-gradient(90deg, rgba(41, 183, 219, 1) 0%, rgba(237, 117, 222, 1) 46%, rgba(219, 219, 41, 1) 100%);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.actionButton.act {
+    background: rgb(41, 183, 219);
+    background: linear-gradient(90deg, rgba(41, 183, 219, 1) 0%, rgba(237, 117, 222, 1) 46%, rgba(219, 219, 41, 1) 100%);
 }
 
 .actionButtonLeft {
     width: auto;
     border-radius: 0px;
-    color: #fff;
-    background-color: coral;
+    color: #000 !important;
+    background: rgb(219, 219, 41);
+    background: linear-gradient(90deg, rgba(219, 219, 41, 1) 0%, rgba(237, 117, 222, 1) 46%, rgba(41, 183, 219, 1) 100%);
     border: 0px;
     text-transform: uppercase;
     margin-right: 25px;
-    padding: 10px 20px;
+    padding: 6px 20px;
     text-decoration: none;
+    font-size: 15px;
+    border-radius: 0px;
+    font-weight: 500;
 }
 
 
@@ -94,7 +118,8 @@ input[type=radio] {
 
 /* Header */
 .nav-link img {
-    max-width: 140px;
+    max-width: 110px;
+    border-radius: 50%;
 }
 
 header .navbar {
@@ -200,7 +225,7 @@ form .form-control {
 
 .nextButton {
     position: relative;
-    background: coral;
+    background: linear-gradient(90deg, rgba(41, 183, 219, 1) 0%, rgba(237, 117, 222, 1) 46%, rgba(219, 219, 41, 1) 100%);
     border-radius: 0;
     padding: 15px 25px;
     border: none;
@@ -217,4 +242,34 @@ form .form-control {
     height: 20px;
     left: 18px;
     top: 5px;
+}
+
+/* Login */
+
+.amplify-button--primary {
+    background: coral !important;
+    border-radius: 0 !important;
+    font-weight: 400;
+}
+
+.amplify-tabs-item[data-state=active] {
+    border-color: coral !important;
+    color: coral !important;
+}
+
+.amplify-button--link {
+    color: coral !important;
+}
+
+.amplify-input:focus {
+    border-color: coral !important;
+    box-shadow: 0 0 0 0.25rem rgba(255, 127, 80, .25) !important;
+}
+
+[data-amplify-authenticator] {
+    margin-top: 5em;
+}
+
+.content-testimonals p {
+    font-weight: 600;
 }

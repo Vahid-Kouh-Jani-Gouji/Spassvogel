@@ -53,50 +53,55 @@ export default function QuoteApi() {
 
     return (
         <Container className='contentPage'>
-            <Row className="my-5">
-                <Col><h1>Qotes</h1></Col>
-            </Row>
-            <Row>
-                <div className="col-md-3 px-4 my-2">
+            <Row className=" my-5">
+                <div className="col-md-3 my-2">
 
                     <Link to={{ pathname: '/contacts' }} className='actionButton'>
-                        Joke anschauen &gt;
+                        Jokes &gt;
+                    </Link>
+                    <Link to={{ pathname: '/quote' }} className='actionButton act'>
+                        Zitaten &gt;
                     </Link>
                     <Link to={{ pathname: '/dadjoke' }} className='actionButton'>
-                        Dadjokes anschauen &gt;
+                        Dadjokes  &gt;
                     </Link>
                     <Link to={{ pathname: '/static' }} className='actionButton'>
-                        Top Ten &gt;
+                        Top-10 Witze &gt;
                     </Link>
                 </div>
-                <div className="col-md-9 px-4 my-2">
-                    <p> {jokes.text}</p>
-                    <div className='starRating' >
-                        {[...Array(5)].map((star, index) => {
-                            const currentRating = index + 1;
-                            return (
-                                <label key={index} >
-                                    <input
-                                        type="radio"
-                                        name='rating'
-                                        value={currentRating}
-                                        onClick={() => setRating(currentRating)}
-                                    />
-                                    <FaStar
-                                        className='star'
-                                        size={30}
-                                        color={currentRating <= (hover || rating) ? "#ffc107" : "#e4e5e9"}
-                                        onMouseEnter={() => setHover(currentRating)}
-                                        onMouseLeave={() => setHover(null)}
-                                    />
-                                </label>
-                            );
-                        })}
+                <div className="col-md-9 my-2">
+                    <h2 className='my-4 mt-0'>Zitaten</h2>
+
+                    <div className='text-center content-testimonals'>
+                        <p> {jokes.text}</p>
+                        <div className='starRating' >
+                            {[...Array(5)].map((star, index) => {
+                                const currentRating = index + 1;
+                                return (
+                                    <label key={index} >
+                                        <input
+                                            type="radio"
+                                            name='rating'
+                                            value={currentRating}
+                                            onClick={() => setRating(currentRating)}
+                                        />
+                                        <FaStar
+                                            className='star'
+                                            size={30}
+                                            color={currentRating <= (hover || rating) ? "#ffc107" : "#e4e5e9"}
+                                            onMouseEnter={() => setHover(currentRating)}
+                                            onMouseLeave={() => setHover(null)}
+                                        />
+                                    </label>
+                                );
+                            })}
+                        </div>
+
+                        <button className='mt-5  nextButton' onClick={getJokes}></button>
                     </div>
 
-                    <button className='mt-5  nextButton' onClick={getJokes}></button>
 
-                    <button className='mt-5 actionButtonLeft' onClick={addNewContact}>Add quote &gt;&gt;</button>&nbsp;
+                    <button className='mt-5 actionButtonLeft' onClick={addNewContact}>Neue Zitate hinzufügen </button>&nbsp;
 
                 </div>
 
